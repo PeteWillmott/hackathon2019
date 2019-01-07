@@ -12,20 +12,52 @@
 </head>
 
 <body>
-    <form class="form-inline">
-        <div class="form-group">
-            <label for="InputName">Name</label>
-            <input type="text" class="form-control" id="InputName" placeholder="Name"></input>
-        </div>
-        <div class="form-group">
-            <label for="InputSurname">Surname</label>
-            <input type="text" class="form-control" id="InputSurname" placeholder="Surname"></input>
-        </div>
-        <div class="form-group">
-            <label for="InputEmail">Email</label>
-            <input type="email" class="form-control" id="InputEmail" placeholder="Email">
-        </div>
-    </form>
+    <div class="wrapper">
+        <h4>Your Details</h2>
+            <form class="form-inline">
+                <select name="title" id="title">
+                    <option value="Mr">Mr</option>
+                    <option value="Mrs">Mrs</option>
+                    <option value="Miss">Miss</option>
+                    <option value="Dr">Dr</option>
+                </select>
+                <div class="form-group">
+                    <label for="InputName">Name</label>
+                    <input type="text" class="form-control" id="InputName" placeholder="Name" required></input>
+                </div>
+                <div class="form-group">
+                    <label for="InputSurname">Surname</label>
+                    <input type="text" class="form-control" id="InputSurname" placeholder="Surname" required></input>
+                </div>
+                <div class="form-group">
+                    <label for="InputEmail">Email</label>
+                    <input type="email" class="form-control" id="InputEmail" placeholder="Email" required>
+                </div>
+                <h4>Your Adress</h3>
+                <div class="form-group">
+                    <label for="address1">Address1</label>
+                    <input type="text" class="form-control" id="InputName" placeholder="Address1" required></input>
+                </div>
+                <div class="form-group">
+                    <label for="address2">Address2</label>
+                    <input type="text" class="form-control" id="InputName" placeholder="Address2" required></input>
+                </div>
+                <div class="form-group">
+                    <label for="InputName">City</label>
+                    <input type="text" class="form-control" id="city" placeholder="City" required></input>
+                </div>
+                <div class="form-group">
+                    <label for="postcode">Postcode</label>
+                    <input type="text" class="form-control" id="postcode" placeholder="Postcode" required></input>
+                </div>
+                <h4>Card Details</h4>
+                <div class="form-group">
+                    <label for="cardnumber">Card Number</label>
+                    <input type="tel" class="form-control" id="postcode" placeholder="Postcode" required></input>
+                </div>
+                <button type="submit" class="btn btn-secondary center-block">Submit</button>
+            </form>
+    </div>
 </body>
 
 </html>
