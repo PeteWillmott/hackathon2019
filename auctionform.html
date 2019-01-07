@@ -5,59 +5,192 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" async></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" async></script>
     <title>Team One Charity Form</title>
 </head>
 
 <body>
-    <div class="wrapper">
-        <h4>Your Details</h2>
-            <form class="form-inline">
-                <select name="title" id="title">
+    <!-- Navigation -->
+
+    <header>
+        <div class="row">
+            <ul id="nav" class="list-inline clearfix">
+                <li class="col-xs-6 col-sm-3 ui-menu-color-home menuitem">
+                    <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
+                </li>
+                <li class="col-xs-6 col-sm-3 ui-menu-color-party menuitem">
+                    <a href="party.html"><i class="fa fa-glass" aria-hidden="true"></i><span>The party</span></a>
+                </li>
+                <li class="col-xs-6 col-sm-3 ui-menu-color-direction menuitem">
+                    <a href="direction.html"><i class="fa fa-car" aria-hidden="true"></i><span>Directions</span></a>
+                </li>
+                <li class="col-xs-6 col-sm-3 ui-menu-color-auction menuitem">
+                    <a href="auction.html" target="_blank"><i class="fa fa-snowflake-o" aria-hidden="true"></i><span>Take part in the auction</span></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Introduction -->
+
+    <h1>Take Part!</h1>
+    <p>Select your lucky numbers below:</p>
+
+    <div class="form-inline">
+        <label>
+             <input type="checkbox">1
+        </label>
+        <label>
+             <input type="checkbox">2
+        </label>
+        <label>
+             <input type="checkbox">3
+        </label>
+        <label>
+             <input type="checkbox">4
+        </label>
+        <label>
+             <input type="checkbox">5
+        </label>
+        <label>
+             <input type="checkbox">6
+        </label>
+        <label>
+             <input type="checkbox">7
+        </label>
+        <label>
+             <input type="checkbox">8
+        </label>
+        <label>
+             <input type="checkbox">9
+        </label>
+        <label>
+             <input type="checkbox">10
+        </label>
+        <label>
+             <input type="checkbox">11
+        </label>
+        <label>
+             <input type="checkbox">12
+        </label>
+        <label>
+             <input type="checkbox">13
+        </label>
+        <label>
+             <input type="checkbox">14
+        </label>
+        <label>
+             <input type="checkbox">15
+        </label>
+        <label>
+             <input type="checkbox">16
+        </label>
+        <label>
+             <input type="checkbox">17
+        </label>
+        <label>
+             <input type="checkbox">18
+        </label>
+        <label>
+             <input type="checkbox">19
+        </label>
+        <label>
+             <input type="checkbox">20
+        </label>
+    </div>
+
+
+    <div class="container-fluid">
+        <!-- Personal details -->
+
+        <h4>Your Details</h4>
+        <form class="form-group">
+            <div class="col-12 y-details pd">
+                <select name="title" id="title" class="form-inline pd">
                     <option value="Mr">Mr</option>
                     <option value="Mrs">Mrs</option>
                     <option value="Miss">Miss</option>
                     <option value="Dr">Dr</option>
                 </select>
-                <div class="form-group">
+            </div>
+            <div class="form-inline pd">
+                <div class="form-group pd">
                     <label for="InputName">Name</label>
-                    <input type="text" class="form-control" id="InputName" placeholder="Name" required></input>
+                    <input type="text" class="form-control form-cl" id="InputName" placeholder="Name" required></input>
                 </div>
-                <div class="form-group">
+                <div class="form-group pd">
                     <label for="InputSurname">Surname</label>
-                    <input type="text" class="form-control" id="InputSurname" placeholder="Surname" required></input>
+                    <input type="text" class="form-control form-cl" id="InputSurname" placeholder="Surname" required></input>
                 </div>
-                <div class="form-group">
+                <div class="form-group pd">
                     <label for="InputEmail">Email</label>
-                    <input type="email" class="form-control" id="InputEmail" placeholder="Email" required>
+                    <input type="email" class="form-control form-cl" id="InputEmail" placeholder="Email" required>
                 </div>
+            </div>
+
+            <!-- Address -->
+            <div class="form-inline pd">
                 <h4>Your Adress</h3>
-                <div class="form-group">
-                    <label for="address1">Address1</label>
-                    <input type="text" class="form-control" id="InputName" placeholder="Address1" required></input>
-                </div>
-                <div class="form-group">
-                    <label for="address2">Address2</label>
-                    <input type="text" class="form-control" id="InputName" placeholder="Address2" required></input>
-                </div>
-                <div class="form-group">
-                    <label for="InputName">City</label>
-                    <input type="text" class="form-control" id="city" placeholder="City" required></input>
-                </div>
-                <div class="form-group">
-                    <label for="postcode">Postcode</label>
-                    <input type="text" class="form-control" id="postcode" placeholder="Postcode" required></input>
-                </div>
+                    <div class="form-group pd">
+                        <label for="address1">Address1</label>
+                        <input type="text" class="form-control form-cl" id="InputName" placeholder="Address1" required></input>
+                    </div>
+                    <div class="form-group pd">
+                        <label for="address2">Address2</label>
+                        <input type="text" class="form-control form-cl" id="InputName" placeholder="Address2" required></input>
+                    </div>
+                    <div class="form-group pd">
+                        <label for="InputName">City</label>
+                        <input type="text" class="form-control form-cl" id="city" placeholder="City" required></input>
+                    </div>
+                    <div class="form-group pd">
+                        <label for="postcode">Postcode</label>
+                        <input type="text" class="form-control form-cl" id="postcode" placeholder="Postcode" required></input>
+                    </div>
+            </div>
+
+            <!-- card details -->
+            <div class="form-inline pd">
                 <h4>Card Details</h4>
-                <div class="form-group">
+                <div class="form-group pd">
                     <label for="cardnumber">Card Number</label>
-                    <input type="tel" class="form-control" id="postcode" placeholder="Postcode" required></input>
+                    <input type="tel" class="form-control form-cl pd" id="cardnumber" placeholder="Card Number" required></input>
                 </div>
-                <button type="submit" class="btn btn-secondary center-block">Submit</button>
-            </form>
+                <div class="form-group">
+                    <label for="nameoncard">Name On Card</label>
+                    <input type="text" class="form-control form-cl pd" id="nameoncard" placeholder="Name On Card" required></input>
+                </div>
+                <div class="form-group pd">
+                    <label for="expirydate">Expity Date</label>
+                    <input type="tel" class="form-control form-cl pd" id="expirydate" placeholder="MM/YYY" required></input>
+                </div>
+                <div class="form-group pd">
+                    <label for="cvc">CVC/CVV</label>
+                    <input type="tel" class="form-control form-cl pd" id="cvc" placeholder="Security Code" required></input>
+                </div>
+                <button type="submit" class="btn btn-secondary center-block pd">Submit</button>
+
+            </div>
+        </form>
     </div>
+    <!-- Footer -->
+
+    <footer "container-fluid">
+
+        <ul class="list-inline social-links">
+            <li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a target="_blank" href="#"><i class="fa fa-pinterest"></i></a></li>
+            <li><a target="_blank" href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a target="_blank" href="#"><i class="fa fa-youtube"></i></a></li>
+        </ul>
+    </footer>
+
 </body>
 
 </html>

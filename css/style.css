@@ -1,9 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: Roboto, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+a, a:hover {
+    text-decoration: none;
+}
+
 
 
 /*----navbar*/
+
 #nav {
-    margin: 0;
-    width: 100%;
+     max-width: 100%;
 }
 
 #nav li {
@@ -47,34 +69,65 @@
 
 
 .ui-menu-color-home {
-    background-color: #e67e22;
+    background-color: #ff1a1a;
 }
 
 .ui-menu-color-party {
-    background-color: #9b59b6;
+    background-color: #009933;
 }
 
 .ui-menu-color-auction {
-    background-color: #3498db;
+    background-color: #009933;
 }
 
 .ui-menu-color-direction {
-    background-color: #525252;
+    background-color: #ff1a1a;
 }
+
+
+/*----backgrounds*/
 
 .charity-background {
     background-image: url('../images/t1logo-sm.jpg');
-    height: 50vh;
+    height: 60vh;
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center;
 }
+
+
 
 /*----footer*/
 
 footer {
-    background-color: #525252;
-    color: #fafafa;
-    min-height: 120px;
+    background-color: #009933;
+    color: white;
+    min-height: 50px;
     margin: 0;
     text-align: center;
+    max-width:100%
+}
+
+.social-links li a i{
+    font-size: 20px;
+    color:white;
+    padding-top: 5px;
+
+}
+
+
+/* Auction form styles */
+
+.form-group .form-cl {
+    width: 200px;
+}
+
+.pd {
+    padding: 10px;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: #e84610;
+    color: #fafafa;
 }
